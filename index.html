@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>GOOD VIBES MORNING KANAZAWA</title>
-<meta name="description" content="2026年12月7日（月）朝7時半、金沢でひらく、DJとヨガと朝ごはんのモーニングパーティー。">
+<meta name="description" content="2026年12月7日（月）朝7時半、ひがし茶屋街の町家 J-Records で。レコードの音と呼吸ヨガで、身体をほぐして温める朝のイベント。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Shippori+Mincho+B1:wght@700;800&family=DM+Mono:wght@400;500&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
@@ -152,6 +152,24 @@ section{padding:104px 0 0}
 .run li.on .tm{color:var(--accent-text)}
 .run li.on b::after{content:"";display:inline-block;width:10px;height:10px;background:var(--accent);border-radius:50%;margin-left:10px;vertical-align:middle}
 
+/* 02 流れ（DJとヨガが同時に続く帯） */
+.flow{border-top:1px solid var(--rule)}
+.flow .edge{display:grid;grid-template-columns:150px 1fr;gap:24px;padding:16px 0;border-bottom:1px solid var(--rule);align-items:baseline}
+.flow .tm{font-size:30px;font-family:"Dela Gothic One"}
+.flow .edge b{font-size:18px}
+.flow .edge span{display:block;font-size:15px;opacity:.85}
+.flow .core{display:grid;grid-template-columns:150px 1fr;gap:24px;padding:22px 0;border-bottom:1px solid var(--rule)}
+.flow .core .tm{color:var(--accent-text);line-height:1.1}
+.flow .core .tm small{display:block;font-size:.5em;margin-top:6px}
+.flow .core h3{font-family:"Dela Gothic One";font-weight:400;font-size:24px;line-height:1.3}
+.flow .core p{font-size:15px;opacity:.85;margin-top:4px}
+.phases{display:grid;grid-template-columns:repeat(4,1fr);margin-top:16px;border:2px solid var(--ink)}
+.phases div{padding:14px 14px 16px;border-right:1px solid var(--rule);background:color-mix(in srgb,var(--accent) calc(var(--lv) * 1%),var(--paper))}
+.phases div:last-child{border-right:none}
+.phases b{display:block;font-size:17px}
+.phases span{display:block;font-size:13px;opacity:.85;margin-top:2px}
+.flow-note{font-size:13px;opacity:.75;margin-top:10px}
+
 /* 03 */
 .origin{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
 .origin .riso{aspect-ratio:5/2;border:2px solid var(--ink);transform:rotate(-1.5deg)}
@@ -179,6 +197,23 @@ section{padding:104px 0 0}
 .map-link{display:inline-flex;align-items:center;gap:8px;margin-top:22px;font-weight:700;font-size:15px}
 .map{border:2px solid var(--ink);aspect-ratio:4/3;background:var(--paper)}
 .map iframe{display:block;width:100%;height:100%;border:0}
+
+/* 会場写真 */
+.media{display:grid;grid-template-columns:minmax(0,.72fr) minmax(0,2fr);gap:14px;margin-top:32px;align-items:start}
+.media video{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;border:2px solid var(--ink);background:var(--ink)}
+.media .vcap{font-size:13px;margin-top:8px;opacity:.85}
+.photos{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.photos figure{margin:0}
+.photos img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border:2px solid var(--ink)}
+.photos figcaption{font-size:13px;margin-top:8px;opacity:.85}
+
+/* 注意事項 */
+.rules{}
+.rules li{list-style:none;display:grid;grid-template-columns:60px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid var(--rule);align-items:baseline}
+.rules .n{font-size:13px;color:var(--accent-text)}
+.rules b{font-size:18px}
+.rules span{display:block;font-size:15px;opacity:.85}
+.rules li.must b::after{content:"必ず";font-family:"DM Mono";font-size:11px;margin-left:10px;padding:1px 8px;border:1px solid var(--accent-text);color:var(--accent-text);border-radius:999px;vertical-align:3px}
 
 /* 05 FAQ */
 .faq{}
@@ -237,6 +272,12 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   .menu li{grid-template-columns:60px 1fr;gap:6px 16px}
   .menu li p{grid-column:2}
   .crew li{grid-template-columns:1fr;gap:10px}
+  .flow .edge,.flow .core{grid-template-columns:1fr;gap:6px}
+  .phases{grid-template-columns:1fr 1fr}
+  .phases div:nth-child(2){border-right:none}
+  .phases div:nth-child(-n+2){border-bottom:1px solid var(--rule)}
+  .media{grid-template-columns:1fr}
+  .media video{max-width:360px;margin:0 auto}
 }
 @media (max-width:560px){
   .wrap{padding:0 16px}
@@ -268,7 +309,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
     <div class="vol mono"><b>VOL.01</b>KANAZAWA / WEEKDAY MORNING</div>
     <h1 class="display misreg">GOOD VIBES<br><span class="l2">MORNING</span><span class="k">KANAZAWA</span></h1>
     <div class="hero-row">
-      <p class="catch">朝7時半、金沢でDJとヨガ。<br>8時半、コーヒーを片手に<br><mark>「いってきます」</mark>。</p>
+      <p class="catch">朝7時半、ひがし茶屋街の町家で<br>レコードと呼吸ヨガ。<br>8時半、コーヒーを片手に<br><mark>「いってきます」</mark>。</p>
       <figure class="hero-photo">
         <div class="riso plain"><img src="img/gvm-sancha-group.jpg" alt="東京・三軒茶屋のGOOD VIBES MORNINGに集まった参加者の集合写真"></div>
         <span class="tape t1"></span><span class="tape t2"></span>
@@ -283,21 +324,21 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
     </div>
     <dl class="stub">
       <div><dt class="mono">DATE</dt><dd>2026年12月7日（月）<small>7:30 – 8:30（開場 7:20）</small></dd></div>
-      <div><dt class="mono">PLACE</dt><dd>金沢市内<small>会場は調整中</small></dd></div>
+      <div><dt class="mono">PLACE</dt><dd>J-Records<small>ひがし茶屋街の町家 <a href="#venue">会場について</a></small></dd></div>
       <div><dt class="mono">FEE</dt><dd>1,500円<small>カード等で事前決済／飲みもの・朝ごはんは各自持参</small></dd></div>
-      <div><dt class="mono">CAPACITY</dt><dd>40名<small>埋まり次第締切／毎月1回ひらく予定</small></dd></div>
+      <div><dt class="mono">CAPACITY</dt><dd>20名<small>埋まり次第締切</small></dd></div>
     </dl>
   </div>
 </header>
 
 <section id="about">
   <div class="wrap">
-    <div class="head"><span class="no mono">01</span><h2 class="display">朝に踊る</h2></div>
-    <p class="manifesto">音楽で踊るのは、<s>夜のクラブ</s> 朝の金沢でいい。<br>好きな曲で身体を起こして、朝ごはんを食べて、そのまま出勤する。それだけで、その日の調子が変わる。</p>
+    <div class="head"><span class="no mono">01</span><h2 class="display">朝に、ほぐす</h2></div>
+    <p class="manifesto">音楽でアガるのは、<s>夜のクラブ</s> 朝の町家でいい。<br>音を浴びながら、呼吸で身体をほぐして、じんわり温める。跳ねなくても、気分はちゃんとアガる。</p>
     <ul class="menu">
-      <li><span class="n mono">A</span><h3>DJ</h3><p>ゆっくりした曲から始めて、だんだん上げていく。</p></li>
-      <li><span class="n mono">B</span><h3>呼吸ヨガ</h3><p>DJの音に合わせて20分、ヨガ講師と身体を起こす。</p></li>
-      <li><span class="n mono">C</span><h3>朝ごはん</h3><p>好きな飲みものと朝ごはんを持ってきてね。食べながら、踊りながら。</p></li>
+      <li><span class="n mono">A</span><h3>DJ</h3><p>レコード屋さんの町家で、朝の音が最初から最後まで鳴りつづける。</p></li>
+      <li><span class="n mono">B</span><h3>呼吸ヨガ</h3><p>DJの音に合わせて、鼻呼吸で身体をほぐして温める。テンポが上がっても跳ねずに。</p></li>
+      <li><span class="n mono">C</span><h3>朝ごはん</h3><p>好きな飲みものと朝ごはんを持ってきてね。食べながら、聴きながら。</p></li>
     </ul>
   </div>
 </section>
@@ -305,14 +346,25 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 <section id="timetable">
   <div class="wrap">
     <div class="head"><span class="no mono">02</span><h2 class="display">当日の流れ</h2></div>
-    <ol class="run">
-      <li><span class="tm">7:20</span><div><b>開場</b><span>持ってきた飲みもので一息</span></div></li>
-      <li class="on"><span class="tm">7:30</span><div><b>DJスタート</b><span>まだ眠くても大丈夫な曲から</span></div></li>
-      <li class="on"><span class="tm">7:40</span><div><b>呼吸ヨガ</b><span>20分 鼻呼吸で、身体のスイッチを入れる</span></div></li>
-      <li class="on"><span class="tm">8:00</span><div><b>上げていく時間 ＋ 朝ごはん</b><span>食べながら、踊りながら</span></div></li>
-      <li><span class="tm">8:20</span><div><b>集合写真</b><span>記念にパシャリ・最後に簡単に案内も</span></div></li>
-      <li><span class="tm">8:30</span><div><b>いってきます</b><span>それぞれの仕事へ</span></div></li>
-    </ol>
+    <div class="flow">
+      <div class="edge"><span class="tm">7:20</span><div><b>開場</b><span>持ってきた飲みもので一息</span></div></div>
+      <div class="core">
+        <span class="tm">7:30<small>– 8:20</small></span>
+        <div>
+          <h3>DJ × 呼吸ヨガ</h3>
+          <p>音は止まらない。DJ と呼吸ヨガが、最初から最後まで同時に進みます。</p>
+          <div class="phases">
+            <div style="--lv:12"><b>ほぐす</b><span>ゆったりした音で、呼吸を整える</span></div>
+            <div style="--lv:28"><b>温める</b><span>鼻呼吸で、身体のスイッチを入れる</span></div>
+            <div style="--lv:48"><b>テンポを上げる</b><span>跳ねずに、身体を大きく動かす</span></div>
+            <div style="--lv:20"><b>ゆるめる</b><span>呼吸を落ち着けて、出勤モードへ</span></div>
+          </div>
+          <p class="flow-note">流れは目安です。その日の音と身体に合わせて進みます。</p>
+        </div>
+      </div>
+      <div class="edge"><span class="tm">8:20</span><div><b>集合写真</b><span>記念にパシャリ・最後に簡単に案内も</span></div></div>
+      <div class="edge"><span class="tm">8:30</span><div><b>いってきます</b><span>それぞれの仕事へ</span></div></div>
+    </div>
   </div>
 </section>
 
@@ -337,32 +389,67 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   </div>
 </section>
 
-<section id="access">
+<section id="venue">
   <div class="wrap">
-    <div class="head"><span class="no mono">04</span><h2 class="display">アクセス</h2></div>
+    <div class="head"><span class="no mono">04</span><h2 class="display">会場</h2></div>
     <div class="access">
       <div>
-        <div class="venue-name">金沢市内</div>
-        <p class="venue-type mono">VENUE TBA</p>
+        <div class="venue-name">J-Records</div>
+        <p class="venue-type mono">RECORD SHOP / MACHIYA</p>
         <dl class="addr">
-          <div><dt class="mono">VENUE</dt><dd>会場は調整中です<small>決まり次第、このページとオープンチャットでお知らせします</small></dd></div>
+          <div><dt class="mono">PLACE</dt><dd>ひがし茶屋街の町家にあるレコード屋さん<small>畳の部屋にレコードの DJ ブースがあります</small></dd></div>
+          <div><dt class="mono">BUILDING</dt><dd>明治に建った、築130年ほどの町家<small>同じ建物に「金澤町家 Gallery &amp; Cafe 椋（むく）」。高い吹き抜けと土間のある空間です</small></dd></div>
+          <div><dt class="mono">ADDRESS</dt><dd>〒920-0831<br>石川県金沢市東山2丁目1-7</dd></div>
+          <div><dt class="mono">ACCESS</dt><dd>金沢駅東口からバスで「東山」下車、すぐ</dd></div>
+          <div><dt class="mono">PARKING</dt><dd>会場に5台ほど駐車できます<small>満車のときは近くのコインパーキングへ（料金・空きは現地でご確認ください）<br>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%BA%E9%87%91%E6%B2%A2%E3%81%B2%E3%81%8C%E3%81%97%E8%8C%B6%E5%B1%8B%E8%A1%97%E7%AC%AC4%20%E9%87%91%E6%B2%A2%E5%B8%82%E6%9D%B1%E5%B1%B13-4" target="_blank" rel="noopener">タイムズ金沢ひがし茶屋街第4</a>（東山3-4）<br>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%82%B6%E3%83%BB%E3%83%91%E3%83%BC%E3%82%AF%E3%81%B2%E3%81%8C%E3%81%97%E8%8C%B6%E5%B1%8B%E8%A1%97%20%E9%87%91%E6%B2%A2%E5%B8%82%E6%9D%B1%E5%B1%B13-2" target="_blank" rel="noopener">ザ・パークひがし茶屋街</a>（東山3-2）<br>・<a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%91%E3%82%B7%E3%83%95%E3%82%A3%E3%83%83%E3%82%AF%E3%83%91%E3%83%BC%E3%82%AF%E6%9D%B1%E5%B1%B1%20%E9%87%91%E6%B2%A2%E5%B8%82%E6%9D%B1%E5%B1%B13-3" target="_blank" rel="noopener">パシフィックパーク東山</a>（東山3-3）</small></dd></div>
+          <div><dt class="mono">INSTAGRAM</dt><dd><a href="https://www.instagram.com/__jrecords__/" target="_blank" rel="noopener" style="text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:3px">@__jrecords__</a></dd></div>
         </dl>
+        <a class="map-link" href="https://www.google.com/maps/place/J.Records/@36.5748456,136.6667599,17z/data=!4m6!3m5!1s0x5ff83300692ab9e3:0x6b29f33a4675b95a!8m2!3d36.5748456!4d136.6667599" target="_blank" rel="noopener">Googleマップで開く</a>
+      </div>
+      <div class="map">
+        <iframe title="J-Recordsの地図" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=J.Records%4036.5748456,136.6667599&amp;ll=36.5748456,136.6667599&amp;z=17&amp;output=embed"></iframe>
       </div>
     </div>
+    <div class="media">
+      <div>
+        <video src="img/venue-walk.mp4" poster="img/venue-walk-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="畳の部屋からレコード売り場まで、会場の中を歩いて回る動画"></video>
+        <p class="vcap">会場の中をひとまわり（音なし）</p>
+      </div>
+      <div class="photos">
+      <figure><img src="img/venue-shop.jpg" alt="吹き抜けの壁一面にレコードが並ぶ J-Records の店内" loading="lazy"><figcaption>吹き抜けの店内。壁一面にレコード</figcaption></figure>
+      <figure><img src="img/venue-booth.jpg" alt="畳の部屋に置かれたターンテーブルとミキサーの DJ ブース" loading="lazy"><figcaption>畳の部屋に、レコードの DJ ブース</figcaption></figure>
+      <figure><img src="img/venue-booth2.jpg" alt="ターンテーブル2台とミキサーが並ぶ DJ ブース" loading="lazy"><figcaption>ターンテーブル2台とミキサー</figcaption></figure>
+      <figure><img src="img/venue-cafe.jpg" alt="漆のお盆にのったコーヒーとチーズケーキ" loading="lazy"><figcaption>同じ建物の「Gallery &amp; Cafe 椋」（営業は昼から）</figcaption></figure>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section id="rules">
+  <div class="wrap">
+    <div class="head"><span class="no mono">05</span><h2 class="display">参加のおねがい</h2></div>
+    <ul class="rules">
+      <li class="must"><span class="n mono">01</span><div><b>飛び跳ねないでください</b><span>会場は日本の町家です。床を守るため、ジャンプや激しく跳ねる動きはできません</span></div></li>
+      <li><span class="n mono">02</span><div><b>畳のスペースは靴を脱いで</b><span>靴下でのご参加がおすすめです</span></div></li>
+      <li><span class="n mono">03</span><div><b>飲みもの・朝ごはんは持ち込みOK、ゴミは持ち帰り</b><span>会場では用意していません。好きなものを持ってきて、ゴミは各自お持ち帰りください</span></div></li>
+      <li><span class="n mono">04</span><div><b>出入りは静かに</b><span>朝の茶屋街です。会場の前や行き帰りは、声と足音を控えめに</span></div></li>
+      <li><span class="n mono">05</span><div><b>定員は20名です</b><span>町家のスペースに合わせた人数です。埋まり次第締め切ります</span></div></li>
+    </ul>
   </div>
 </section>
 
 <section id="faq">
   <div class="wrap">
-    <div class="head"><span class="no mono">05</span><h2 class="display">よくある質問</h2></div>
+    <div class="head"><span class="no mono">06</span><h2 class="display">よくある質問</h2></div>
     <div class="faq">
       <details><summary><span class="q mono">Q.01</span><span>ひとりで参加しても大丈夫？</span></summary><p class="a">大丈夫です。事前にオープンチャットに入っておくと、当日も話しかけやすくなります。</p></details>
-      <details><summary><span class="q mono">Q.02</span><span>DJイベントは初めて。踊れなくてもいい？</span></summary><p class="a">踊らなくて大丈夫です。コーヒーを飲みながら聴いているだけでも楽しめます。</p></details>
-      <details><summary><span class="q mono">Q.03</span><span>ヨガは初めて。マットは要る？</span></summary><p class="a">初めてでも大丈夫です。立ったまま・座ったままでできる軽めのストレッチが中心なので、マットは要りません。</p></details>
+      <details><summary><span class="q mono">Q.02</span><span>DJイベントは初めて。踊れなくてもいい？</span></summary><p class="a">大丈夫です。このイベントは跳ねたりせず、呼吸ヨガで身体をほぐしながら音を楽しむスタイルです。</p></details>
+      <details><summary><span class="q mono">Q.03</span><span>ヨガは初めて。マットは要る？</span></summary><p class="a">初めてでも大丈夫です。呼吸と、身体をほぐして温める軽い動きが中心です。マットは要りません。</p></details>
       <details><summary><span class="q mono">Q.04</span><span>服装は？</span></summary><p class="a">出勤する服のままで参加できます。終わったら、そのまま会社へどうぞ。</p></details>
       <details><summary><span class="q mono">Q.05</span><span>朝ごはんや飲みものは出る？</span></summary><p class="a">会場では用意していません。好きな飲みものと朝ごはんを持ってきてください。</p></details>
-      <details><summary><span class="q mono">Q.06</span><span>途中から来たり、途中で帰ったりしてもいい？</span></summary><p class="a">どちらもOKです。ヨガの時間（7:40〜8:00）に着いたときは、静かに入ってきてください。</p></details>
-      <details><summary><span class="q mono">Q.07</span><span>申し込みと支払いは？</span></summary><p class="a">このページの「チケットを買う」から、カード等で事前にお支払いください（1,500円・定員40名）。当日までのお知らせはオープンチャットで流します。</p></details>
+      <details><summary><span class="q mono">Q.06</span><span>途中から来たり、途中で帰ったりしてもいい？</span></summary><p class="a">どちらもOKです。DJ とヨガはずっと続いているので、途中から来たときは静かに入ってきてください。</p></details>
+      <details><summary><span class="q mono">Q.07</span><span>申し込みと支払いは？</span></summary><p class="a">このページの「チケットを買う」から、カード等で事前にお支払いください（1,500円・定員20名）。当日までのお知らせはオープンチャットで流します。</p></details>
       <details><summary><span class="q mono">Q.08</span><span>キャンセルしたいときは？</span></summary><p class="a">12月6日（日）23:59 までにご連絡いただければ全額返金します。それ以降は返金できません。詳しくは<a href="tokushoho.html">特定商取引法に基づく表記</a>をご覧ください。</p></details>
       <details><summary><span class="q mono">Q.09</span><span>次はいつ？</span></summary><p class="a">毎月1回、平日の朝にひらく予定です。日程はオープンチャットでお知らせします。</p></details>
       <details><summary><span class="q mono">Q.10</span><span>写真は撮る？SNSに載せていい？</span></summary><p class="a">当日の様子を撮影して、SNSに載せます。参加者のみなさんの投稿も大歓迎です。写りたくない方は配慮しますので、事前にオープンチャットで運営に教えてください。</p></details>
@@ -375,7 +462,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
     <div class="join-box">
       <div class="stamp mono"><div><b>VOL.01</b>2026.12.07<br>金沢</div></div>
       <h2 class="display misreg">金沢の朝、<br>一緒にやろう。</h2>
-      <p>チケットはこのページから購入できます（カード等で事前決済・定員40名）。当日までのお知らせは、オープンチャットで流します。</p>
+      <p>チケットはこのページから購入できます（カード等で事前決済・定員20名）。当日までのお知らせは、オープンチャットで流します。</p>
       <div class="btns">
         <a class="btn" href="https://buy.stripe.com/eVq9ATeVx3FlaluciUcwg00">
           <svg viewBox="0 0 24 24"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2M13 17v2M13 11v2"/></svg>
@@ -395,7 +482,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
     <span>GOOD VIBES MORNING KANAZAWA</span>
     <span><a href="mailto:goodvibesmorning.kanazawa@gmail.com">GoodVibesMorning.Kanazawa@gmail.com</a></span>
     <span><a href="tokushoho.html">特定商取引法に基づく表記</a></span>
-    <span>PHOTO: @ikuhamuteki</span>
+    <span>PHOTO: @ikuhamuteki / いながわ</span>
   </div>
 </footer>
 
